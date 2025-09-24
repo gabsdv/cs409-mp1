@@ -4,10 +4,142 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
         <title>MP1</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- Navabar -->
+        <div id='navbar' class='navbar'>
+            <a data-section='home' href='#home' class='nav-item nav-active'>Home</a>
+            <a data-section='about' href='#about' class='nav-item'>About</a>
+            <a data-section='contact' href='#contact' class='nav-item'>Contact</a>
+            <a href='#' class='nav-item' id='hours-button'>Hours</a>
+        </div>
+
+        <!-- Home -->
+        <div id='home' class='section home'>
+            <h1>University of Illinois Urbana Champaign</h1>
+            <h2>Home to the brightest minds!</h2>
+        </div>
+
+        <!-- Video -->
+        <div id='video' class='section'>
+            <video id='campus-video' autoplay muted loop>
+                <source src='assets/video.mp4' type='video/mp4'>
+            </video>
+        </div>
+
+        <!-- About -->
+        <div id='about' class='section'>
+            <h2>About</h2>
+            <p>The University of Illinois provides world-class education through over 150 undergraduate programs and more than 100 graduate programs.</p>
+            <p>Each year, thousands of students embark on a life changing journey to explore their passions.</p>
+        </div>
+
+        <!-- Multi-Column -->
+        <div id='multi-column' class='section'>
+            <div>
+                <i class='fa-solid fa-graduation-cap'></i>
+                <h2>90% employment post-grad</h2>
+            </div>
+            <div>
+                <i class='fa-solid fa-building'></i>
+                <h2>Vibrant startup scene</h2>
+            </div>
+            <div>
+                <i class='fa-solid fa-users'></i>
+                <h2>Invaluable networking</h2>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <div id='background-image' class='section'></div>
+
+
+        <!-- Carousel -->
+        <div id='carousel' class='section'>
+            <div class='carousel-container'>
+                <div class='carousel-slides'>
+                    <div class='slide active'>
+                        <h1>Discover Excellence at Illinois</h1>
+                        <h2>World-class education in the heart of America</h2>
+                    </div>
+                    <div class='slide'>
+                        <h1>Innovation Starts Here</h1>
+                        <h2>Leading research and breakthrough discoveries</h2>
+                    </div>
+                    <div class='slide'>
+                        <h1>Fighting Illini Pride</h1>
+                        <h2>Join a community of champions and scholars</h2>
+                    </div>
+                </div>
+
+                <button class='carousel-button prev-button'>&larr;</button>
+                <button class='carousel-button next-button'>&rarr;</button>
+                
+                <div class='carousel-dots'>
+                    <span class='dot active' data-slide='0'></span>
+                    <span class='dot' data-slide='1'></span>
+                    <span class='dot' data-slide='2'></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id='contact' class='section'>
+            <h2>Contact Us</h2>
+            <div class='contact-container'>
+                <form class='contact-form'>
+                    <div class='form-group'>
+                        <label for='name'>Name</label>
+                        <input type='text' id='name' name='name' required>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label for='email'>Email</label>
+                        <input type='email' id='email' name='email' required>
+                    </div>
+                    
+                    <div class='form-group'>
+                        <label for='message'>Message</label>
+                        <textarea id='message' name='message' rows='5' required></textarea>
+                    </div>
+                    
+                    <button type='submit' class='submit-contact'>Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id='footer'>
+            <h5>University of Illinois Urbana-Champaign</h5>
+            <i class='fa-brands fa-instagram'></i>
+        </div>
+
+        <!-- Modal -->
+        <div id='hours-modal' class='modal'>
+            <div class='modal-content'>
+                <span class='modal-close'>&times;</span>
+                <h2>University Hours</h2>
+                <div class='hours-schedule'>
+                    <div class='hours-day'>
+                        <span class='day'>Monday - Friday</span>
+                        <span class='time'>8:00 AM - 10:00 PM</span>
+                    </div>
+                    <div class='hours-day'>
+                        <span class='day'>Saturday</span>
+                        <span class='time'>9:00 AM - 8:00 PM</span>
+                    </div>
+                    <div class='hours-day'>
+                        <span class='day'>Sunday</span>
+                        <span class='time'>10:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class='hours-day'>
+                        <span class='day'>Holidays</span>
+                        <span class='time'>Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
